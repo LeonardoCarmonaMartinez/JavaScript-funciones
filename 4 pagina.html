@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="one" style="background-color: red; width: 200px; height: 200px;"></div>
+    <div id="two" style="background-color: blue; width: 200px; height: 200px;"></div>
+    <div id="three" style="background-color: yellow; width: 200px; height: 200px;"></div>
+    <div id="four" style="background-color: green; width: 200px; height: 200px;"></div>
+    
+    <Script>
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'a') {
+                colorChoise = "black"                             
+            } 
+            else if (event.key === 's') {
+                colorChoise = "purple"                           
+            }
+            else if (event.key === 'd') {
+                colorChoise = "orange"            
+            }
+            })
+
+        div1 = document.querySelector("#one");
+        div1.addEventListener("click", function() {           
+            div1.style.backgroundColor = colorChoise;
+        })
+        
+        div2 = document.querySelector("#two");
+        div2.addEventListener("click", function() {
+            div2.style.backgroundColor = colorChoise;
+        })
+        
+        div3 = document.querySelector("#three");
+        div3.addEventListener("click", function() {
+            div3.style.backgroundColor = colorChoise;
+        })
+
+        div4 = document.querySelector("#four");
+        div4.addEventListener("click", function() {
+            div4.style.backgroundColor = colorChoise;
+        })
+
+    </Script>
+
+</body>
+</html>
